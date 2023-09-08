@@ -40,7 +40,7 @@ android {
         compose = true
     }
     composeOptions {
-        kotlinCompilerExtensionVersion = "1.4.3"
+        kotlinCompilerExtensionVersion = "1.4.7"
     }
     packaging {
         resources {
@@ -50,10 +50,12 @@ android {
 }
 
 dependencies {
+    implementation("androidx.work:work-runtime-ktx:2.8.1")
     implementation("androidx.glance:glance:1.0.0")
     implementation("androidx.glance:glance-material:1.0.0")
     implementation("androidx.glance:glance-material3:1.0.0")
     implementation("androidx.glance:glance-appwidget:1.0.0")
+    implementation("androidx.compose.compiler:compiler:1.4.7")
 
     implementation("androidx.core:core-ktx:1.9.0")
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.6.1")
